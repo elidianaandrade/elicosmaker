@@ -359,6 +359,8 @@ input {
 }
 
 .menu-social-itens {
+  font-size: 1.125rem;
+  color: #FFF;
   padding: 5px;
 }
 
