@@ -1,85 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root{
+  --primary-color: #725CE0;
+  --secondary-color: #84BCD2;
+  --grayd: #3D3D3D;
+  --white: #EAEAEA;
+  --black: #0C0C0C;
+  --dark-blue: #212327;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "Alata", Arial, sans-serif;
   text-decoration: none;
   list-style: none;
+
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #CACACA #545454; 
+  scrollbar-color: var(--grayd) transparent; 
 }
 
 body {
-  background-color: #000;
+  background: var(--black);
   font-size: 100%;
+  color: var(--grayl); /* paragraph text */
+}
+
+a {
+  color: var(--grayl);
+}
+
+.title-header {
+  display: none;
 }
 
 /* SCROLLBAR STYLE (Chrome, Edge, Safari Style) */
 body::-webkit-scrollbar {
-  width: 0.45rem;
+  width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #151515;
+  background: var(--dark-blue);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #545454;
+  background: var(--grayd);
 }
 /* SCROLLBAR END */
 
-.cabecalho {
-  background-color: #000;
+
+/* HEADER STYLE */
+#header-bar {
+  position: fixed;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  border-bottom: 1px solid #393939;
-  padding: 0% 5% 0%;
-  user-select: none;
-}
-
-.cabecalho-titulo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  color: #FFF;
-  text-transform: uppercase;
-  display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  background: var(--black);
+  user-select: none;
+  padding: 0 4rem;
+  border-bottom: 0.1rem solid var(--dark-blue);
 }
 
-.menu-principal > ul > li {
-  display: flex;
-  flex-direction: row;
-  display: inline-block;
-}
-
-.menu-principal-itens {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #FFF;
-  padding: 20px;
-}
-
-a {
-  color: #FFF;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.menu-principal-itens:hover {
-  color: #7F7FD5;
-}
-
-.conteudo {
+#toggle-button {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 3.95rem;
+  background: var(--black);
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: 1s;
 }
 
-/* Conteúdo Principal */
-.conteudo-principal {
+#toggle-button-icon::before { /* line top */
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 0.175rem;
+  background: currentColor;
+  margin-top: -0.84rem;
+  transition: transform .6s;
+}
+
+#toggle-button-icon { /* line center */
+  border-top: 0.2rem solid;
+  width: 2rem;
+  height: 0.2rem;
+  color: var(--white);
+  padding-left: 0.5rem;
+}
+
+#toggle-button-icon::after { /* line end */
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 0.175rem;
+  background: currentColor;
+  margin-top: 1.05rem;
+  transition: transform .6s;
+}
+
+#header-bar.active #toggle-button-icon { 
+  border-top: transparent; 
+}
+
+#header-bar.active #toggle-button-icon::before {
+  transform: rotate(45deg);
+  margin-top: 0.2rem;
+  width: 1rem;
+}
+
+#header-bar.active #toggle-button-icon::after {
+  transform: rotate(-45deg);
+  margin-top: -0.8rem;
+  width: 1rem;
+}
+
+#header-bar.active #toggle-menu-list {
+  animation: down-menu 1s;
+  display: block;
+}
+
+@keyframes down-menu {
+  from {
+    transform: translateX(30rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#toggle-nav {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+#toggle-menu-list {
+  display: none;
+  margin: 1.2rem;
+}
+
+#toggle-menu-list li a{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+#toggle-menu-list li a:hover{
+  color: var(--primary-color);
+}
+
+#header-bar.active #toggle-menu-list{
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-family: 'Alata', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+/* HEADER STYLE END */
+
+
+/* MAIN STYLE */
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.main-content1 {
+  width: 0;
+}
+
+.main-content2 {
+  width: 100%;
+  height: 61rem;
+  background: linear-gradient(rgba(12, 12, 12, 0.1), rgba(12,12,12,0.2), rgba(12,12,12) 90%), url('../img/projects/elicosmaker-lanterna-thresh.png') no-repeat center;
+  background-size: cover;
+}
+/* MAIN STYLE END */
+
+
+#sobre {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -118,22 +242,19 @@ a {
   color: #FFF;
 }
 
-.botao-degrade {
-  width: 140px;
-  height: 40px;
+.button-gradient {
+  height: 3rem;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
-  border-radius: 50px;
-  box-shadow: 1px 0px 6px -1px #949494;  
+  border-radius: 10rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 1rem;
   color: #000;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 1rem 1.5rem;
 }
 
 .botao-degrade:hover {
@@ -227,11 +348,6 @@ a {
   height: 150px;
   object-fit: cover;
   user-select: none;
-}
-
-.servicos-categorias-img:hover {
-  border: 5px solid #393939;
-  cursor: pointer;
 }
 
 .servicos-categorias-titulo {
@@ -337,19 +453,18 @@ input {
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  border-top: 1px solid #393939;
-  padding: 1% 2% 1%;
+  border-top: 0.1rem solid var(--dark-blue);
   margin-top: 60px;
   user-select: none;
+  padding: 0.6rem 4rem;
 }
 
 .rodape-titulo {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   color: #FFF;
   text-transform: uppercase;
-  padding-right: 10px;
 }
 
 .menu-social-ul {
