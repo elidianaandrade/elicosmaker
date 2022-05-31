@@ -39,7 +39,7 @@ a:hover,#projetos .nav-link:hover{
   color: var(--primary-color) !important;
 }
 
-#sobre, #projetos, #contato {
+#sobre, #projetos, #destaque, #contato {
   padding: 8rem 0 4rem !important;
 }
 
