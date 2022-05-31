@@ -4,7 +4,6 @@
   --primary-color: #725CE0;
   --secondary-color: #84BCD2;
   --grayd: #242424;
-  --white: #EAEAEA;
   --black: #0C0C0C;
   --dark-blue: #212327;
 }
@@ -30,6 +29,21 @@ body {
   scrollbar-color: var(--grayd) transparent; 
 }
 
+nav a, footer a {
+  text-decoration: none !important;
+  opacity: 100% !important;
+  color: var(--secondary-color) !important;
+}
+
+a:hover,#projetos .nav-link:hover{
+  color: var(--primary-color) !important;
+}
+
+#sobre, #projetos, #contato {
+  padding: 8rem 0 !important;
+}
+
+/* SCROLLBAR STYLE (Chrome, Edge, Safari Style) */
 body::-webkit-scrollbar {
   width: 0.4rem;
 }
@@ -46,28 +60,69 @@ header {
   background: var(--black) !important;
   opacity:85%; 
 }
+/* SCROLLBAR STYLE END */
 
-i {
-  font-size: 1.2rem;
-  color: var(--white);
+
+/* HEADER STYLE */
+.nav-link {
+  color: white !important;
+  opacity: 100% !important;
 }
 
-i:hover {
+nav i {
+  font-size: 1.2rem;
+  color: white;
+  opacity: 100% !important;
+}
+
+nav i:hover {
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent; 
 }
+/* HEADER STYLE END */
 
+
+/* HOME STYLE */
 #home {
   height: 45rem;
   background: linear-gradient(rgba(12,12,12,0.35), rgba(12,12,12,0.4), rgba(12,12,12) 100%), url('../img/projects/elicosmaker06.png') no-repeat center;
   background-size: cover;
+  margin-bottom: 10rem;
 }
 
+#home h1, #sobre h2, #categorias h2, #destaque h2, #projetos h2, #contato h2 {
+  letter-spacing: 0.2rem;
+}
+/* HOME STYLE END */
+
+
+/* SOBRE STYLE */
+#sobre .card i {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+}
+/* SOBRE STYLE END */
+
+/* PROJETOS STYLE */
 .carousel img{
   height: 30rem;
   object-fit: cover;
 }
 
+#portfolio .nav-link.active{
+  background: var(--primary-color);
+  color: var(--black) !important;
+}
+
+#portfolio .card img {
+  height: 20rem;
+  object-fit: cover;
+}
+/* PROJETOS STYLE END */
