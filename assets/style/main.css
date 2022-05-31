@@ -29,13 +29,13 @@ body {
   scrollbar-color: var(--grayd) transparent; 
 }
 
-nav a, footer a {
+nav a, footer a, #contato a {
   text-decoration: none !important;
   opacity: 100% !important;
   color: var(--secondary-color) !important;
 }
 
-a:hover,#projetos .nav-link:hover{
+a:hover, #projetos .nav-link:hover{
   color: var(--primary-color) !important;
 }
 
@@ -110,10 +110,6 @@ nav i:hover {
 /* SOBRE STYLE END */
 
 /* PROJETOS STYLE */
-#categorias .card {
-  height: 10rem;
-}
-
 #categorias .card:hover {
   border: 0.05rem solid var(--primary-color) !important;
 }
