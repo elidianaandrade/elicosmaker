@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://elidianaandrade.github.io/archstil/">
+  <a href="https://elidianaandrade.github.io/elicosmaker">
     <img alt="Eli Cosmaker" src="https://github.com/elidianaandrade/elidianaandrade.github.io/blob/feature-v1/assets/img/projects-covers/cover-screen-elicosmaker.png?raw=true">
   </a>
 </div>
@@ -7,7 +7,7 @@
 
 # ELI COSMAKER | Propmaker Portfolio
 
-## ⚔ About the project
+## ⚔ About this project
 Portfolio created to share my works done in my hobby as a [cosmaker](https://www.instagram.com/elicosmaker/).
 
 ## 💻 Technologies
