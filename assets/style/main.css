@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
   --primary-color: #725CE0;
@@ -29,18 +30,23 @@ body {
   scrollbar-color: var(--grayd) transparent; 
 }
 
+p {
+  font-family: "Lato", Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
 nav a, footer a, #contato a {
   text-decoration: none !important;
   opacity: 100% !important;
   color: var(--secondary-color) !important;
 }
 
-a:hover, #projetos .nav-link:hover{
+a:hover, #contato a:hover, #contato a:hover i, #projetos .nav-link:hover{
   color: var(--primary-color) !important;
 }
 
-#sobre, #projetos, #destaque, #contato {
-  padding: 8rem 0 4rem !important;
+#sobre, #projetos, #contato {
+  padding: 8rem 1.5rem 4rem !important;
 }
 
 /* SCROLLBAR STYLE (Chrome, Edge, Safari Style) */
@@ -88,7 +94,7 @@ nav i:hover {
 /* HOME STYLE */
 #home {
   height: 45rem;
-  background: linear-gradient(rgba(12,12,12,0.35), rgba(12,12,12,0.4), rgba(12,12,12) 100%), url('../img/projects/elicosmaker06.png') no-repeat center;
+  background: linear-gradient(rgba(12,12,12,0.35), rgba(12,12,12,0.4), rgba(12,12,12) 100%), url('../img/slide/elicosmaker01.png') no-repeat center;
   background-size: cover;
 }
 
@@ -136,9 +142,15 @@ nav i:hover {
   object-fit: cover;
 }
 
+#portfolio .card, .card img {
+  border-radius: 0;
+}
+
 #portfolio .nav-link.active{
-  background: var(--primary-color);
-  color: var(--black) !important;
+  border-radius: 0;
+  border-bottom: 0.05rem solid var(--primary-color);
+  color: var(--primary-color) !important;
+  background: transparent;
 }
 
 #portfolio .card img {
@@ -146,3 +158,7 @@ nav i:hover {
   object-fit: cover;
 }
 /* PROJETOS STYLE END */
+
+footer {
+  border-top: 0.05rem solid var(--dark-blue);
+}
