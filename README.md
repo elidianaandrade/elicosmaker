@@ -1,19 +1,21 @@
-<div align="center">
+<div id="top" align="center">
   <a href="https://elidianaandrade.github.io/elicosmaker">
-    <img alt="Eli Cosmaker" src="https://github.com/elidianaandrade/elidianaandrade.github.io/blob/feature-v1/assets/img/projects-covers/cover-screen-elicosmaker.png?raw=true">
+    <img alt="Eli Cosmaker" src="https://github.com/elidianaandrade/utilities/blob/main/templates/README/img/covers/elicosmaker.png?raw=true">
   </a>
 </div>
-<br>
 
 # ELI COSMAKER | Propmaker Portfolio
 
 ## ⚔ About this project
 Portfolio created to share my works done in my hobby as a [cosmaker](https://www.instagram.com/elicosmaker/).
 
+[![Preview](https://img.shields.io/badge/Preview-000?style=for-the-badge&logo=github&logoColor=7520FF)](https://elidianaandrade.github.io/elicosmaker/)
+![Project in progress](https://img.shields.io/badge/Project%20In%20Progress-7520FF?style=for-the-badge)
+
 ## 💻 Technologies
-[![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=E34F26)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=00BFFF)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap5-000?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+[![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=7520FF)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=7520FF)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap5-000?style=for-the-badge&logo=bootstrap&logoColor=7520FF)](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 <div align="right">
   <a href="#top">
