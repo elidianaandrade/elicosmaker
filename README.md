@@ -6,13 +6,13 @@
 
 # ELI COSMAKER | Propmaker Portfolio
 
-## ⚔ About this project
-Portfolio created to share my works done in my hobby as a [cosmaker](https://www.instagram.com/elicosmaker/).
+## ⚔ Sobre o projeto
+Portfólio criado para compartilhar os trabalhos que desenvolvi no meu hobby como [Cosmaker](https://www.instagram.com/elicosmaker/).
 
 [![Preview](https://img.shields.io/badge/Preview-000?style=for-the-badge&logo=github&logoColor=7520FF)](https://elidianaandrade.github.io/elicosmaker/)
-![Project in progress](https://img.shields.io/badge/Project%20In%20Progress-7520FF?style=for-the-badge)
+![Projeto em andamento](https://img.shields.io/badge/Project%20In%20Progress-7520FF?style=for-the-badge)
 
-## 💻 Technologies
+## 💻 Tecnologias
 [![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=7520FF)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=7520FF)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap5-000?style=for-the-badge&logo=bootstrap&logoColor=7520FF)](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
